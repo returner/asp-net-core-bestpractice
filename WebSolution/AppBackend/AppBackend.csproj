@@ -2,10 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+	<LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>1586ccb8-7d16-447b-b42f-0611214fd1bf</UserSecretsId>
-    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	<NoWarn>$(NoWarn);1591</NoWarn>
+	<NoWarn>$(NoWarn);8632</NoWarn>
+	<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
   <ItemGroup>

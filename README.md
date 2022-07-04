@@ -1,2 +1,5 @@
 # asp-net-core-bestpractice
-my asp.net core structure best practice
+## docker
+```
+docker-compose -p asp-net-core up -d
+```
