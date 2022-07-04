@@ -1,8 +1,6 @@
-﻿using AppEntities.interfaces;
-
-namespace AppEntities.Entities
+﻿namespace AppDto
 {
-    public record UserInfo : IEntityAggreateRoot
+    public record UserInfoDto
     {
         public int Id { get; init; }
         public string? UserKey { get; init; }

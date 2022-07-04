@@ -15,4 +15,7 @@
 	  <ProjectReference Include="..\AppDto\AppDto.csproj" />
 	  <ProjectReference Include="..\AppRepository\AppRepository.csproj" />
 	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="UserInfoService\" />
+	</ItemGroup>
 </Project>

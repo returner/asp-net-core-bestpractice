@@ -12,4 +12,7 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\AppEntities\AppEntities.csproj" />
 	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Specifications\UserInfoSpec\" />
+	</ItemGroup>
 </Project>

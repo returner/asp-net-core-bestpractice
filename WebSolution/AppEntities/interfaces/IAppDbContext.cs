@@ -1,10 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AppEntities.Entities;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AppEntities.interfaces
 {
@@ -13,5 +9,7 @@ namespace AppEntities.interfaces
         DbSet<TEntity> Set<TEntity>() where TEntity : class;
         DatabaseFacade Database { get; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
+        DbSet<UserInfo> UserInfos { get; set; }
+        DbSet<Product> Products { get; set; }
     }
 }

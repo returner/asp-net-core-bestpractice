@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppEntities.interfaces
 {
-    public interface IEntityAggrateRoot
+    public interface IEntityAggreateRoot
     {
     }
 }
