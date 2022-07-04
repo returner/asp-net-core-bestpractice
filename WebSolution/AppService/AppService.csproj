@@ -5,5 +5,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="11.0.1" />
+		<PackageReference Include="MediatR" Version="10.0.1" />
+		<PackageReference Include="SixLabors.ImageSharp" Version="2.1.3" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\AppCommon\AppCommon.csproj" />
+	  <ProjectReference Include="..\AppDto\AppDto.csproj" />
+	  <ProjectReference Include="..\AppRepository\AppRepository.csproj" />
+	</ItemGroup>
 </Project>
