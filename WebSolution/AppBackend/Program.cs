@@ -6,7 +6,7 @@ using System.Reflection;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var appSettings = new ConfigurationService(EnvironmentType.AspNetCore, AppContext.BaseDirectory).Build();
+var appSettings = new AppSettingsConfigurationBuilder(EnvironmentType.AspNetCore, AppContext.BaseDirectory).Build();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

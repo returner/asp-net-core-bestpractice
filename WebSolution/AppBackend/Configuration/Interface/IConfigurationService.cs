@@ -2,7 +2,7 @@
 
 namespace AppBackend.Configuration
 {
-    public interface IConfigurationService
+    public interface IAppSettingsConfigurationBuilder
     {
         IAppSettings Build();
     }

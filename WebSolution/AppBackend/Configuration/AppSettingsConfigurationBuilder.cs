@@ -3,11 +3,11 @@ using AppBackend.Configuration.Models;
 
 namespace AppBackend.Configuration
 {
-    public class ConfigurationService : IConfigurationService
+    public class AppSettingsConfigurationBuilder : IAppSettingsConfigurationBuilder
     {
         private readonly IConfiguration _configuration;
 
-        public ConfigurationService(EnvironmentType environmentType, string? currentDirectory = null)
+        public AppSettingsConfigurationBuilder(EnvironmentType environmentType, string? currentDirectory = null)
         {
             var environmentVariableName = environmentType switch
             {
@@ -23,6 +23,7 @@ namespace AppBackend.Configuration
                 .AddEnvironmentVariables()
                 .Build();
         }
+
         private T GetConfigurationValue<T>(string key) => _configuration.GetSection($"AppSettings:{key}").Get<T>();
 
         public IAppSettings Build()
